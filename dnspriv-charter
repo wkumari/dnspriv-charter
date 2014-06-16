@@ -1,0 +1,28 @@
+DNS PRIVate Exchange
+--------------------
+
+The DNS PRIVate Exchange (DPRIVE) will develop mechanisms to provide
+confidentiality to DNS exchanges. The WG will specify mechanisms that
+extend the DNS protocol to ensure communication between clients & resolvers
+and resolvers & authoritative servers are confidential and maintains
+message integrity.
+
+The goal of this WG is to provide privacy to all DNS message exchanges,
+primarily to address the threats of pervasive monitoring (RFC 7258). The
+DPRIVE WG will focus on a solution that addresses the risks described in
+draft-bortzmeyer-dnsop-privacy. The goals of the DPRIVE WG are:
+
+- Provide privacy and message integrity for all DNS transactions
+
+- Maintain backwards compatibility with legacy DNS implementations
+
+- Require no application-level changes
+
+- Require no additional information from applications or users
+
+The WG will deliver:
+
+- A protocol specification for DNS exchange privacy and message integrity
+
+- Key exchange mechanism?
+
