@@ -1,18 +1,29 @@
 DNS PRIVate Exchange
 --------------------
 
-The DNS PRIVate Exchange (DPRIVE) will develop mechanisms to provide
-confidentiality to DNS exchanges. The WG will specify mechanisms that
-extend the DNS protocol to ensure communication between clients & resolvers
-and resolvers & authoritative servers are confidential and maintains
-message integrity.
+The DNS PRIVate Exchange (DPRIVE) Working Group develops mechanisms 
+to add provide confidentiality to DNS transactions, to address
+pervasive monitoring attack (RFC 7258) concerns.
 
-The goal of this WG is to provide privacy to all DNS message exchanges,
-primarily to address the threats of pervasive monitoring (RFC 7258). The
-DPRIVE WG will focus on a solution that addresses the risks described in
-draft-bortzmeyer-dnsop-privacy. The goals of the DPRIVE WG are:
+The set of DNS requests that requests an individual makes provides an
+attacker with a large amount of information about that individual. DPRIVE
+aims to deprive the attacker of this information.
 
-- Provide privacy and message integrity for all DNS transactions
+The primary focus will be on mechanisms that provide confidentialiy between
+clients & iterative resolvers, but may also consider mechanisms that provide
+confidentiality between iterative resolvers & authoritative servers, or that
+provide end-to-end confidentiality. 
+
+DPRIVE is only chartered to work on mechanisms that add confidentiality
+to the DNS. While it may be tempting to solve a bunch of other DNS issues
+while adding confidentiality, DPRIVE is not the working group to do this. 
+
+The DPRIVE WG will focus on a solution that addresses risks such as those in
+draft-bortzmeyer-dnsop-privacy.
+
+Some of the main design goals (in no particular order) are:
+
+- Provide confidentiality to DNS transactions.
 
 - Maintain backwards compatibility with legacy DNS implementations
 
@@ -20,9 +31,8 @@ draft-bortzmeyer-dnsop-privacy. The goals of the DPRIVE WG are:
 
 - Require no additional information from applications or users
 
-The WG will deliver:
+- Focus on developing a deployable solution!
 
-- A protocol specification for DNS exchange privacy and message integrity
 
-- Key exchange mechanism?
+
 
